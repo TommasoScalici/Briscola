@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Briscola.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout Margin="10" VerticalOptions="CenterAndExpand">
+        <Label
+            HorizontalOptions="Center"
+            Text="Benvenuto in Briscola, quando sei pronto per iniziare, premi 'Inizia'!"
+            VerticalOptions="Center" />
+
+        <Button
+            Clicked="StartButtonClicked"
+            HorizontalOptions="Center"
+            Text="Inizia!"
+            VerticalOptions="Center" />
+
+    </StackLayout>
+
+</ContentPage>

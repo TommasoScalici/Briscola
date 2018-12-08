@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Briscola.GamePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage.BackgroundImage>
+        <OnPlatform x:TypeArguments="x:String">
+            <On Platform="Android, iOS" Value="sfondo.jpg" />
+        </OnPlatform>
+    </ContentPage.BackgroundImage>
+
+    <Grid Margin="10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <Image
+            x:Name="opponentCard1"
+            Grid.Row="0"
+            Grid.Column="1" />
+        <Image
+            x:Name="opponentCard2"
+            Grid.Row="0"
+            Grid.Column="2" />
+        <Image
+            x:Name="opponentCard3"
+            Grid.Row="0"
+            Grid.Column="3" />
+
+        <Image
+            x:Name="deck"
+            Grid.Row="1"
+            Grid.Column="0" />
+        <Image
+            x:Name="trumpCard"
+            Grid.Row="1"
+            Grid.Column="1" />
+
+        <Image
+            x:Name="yourCard1"
+            Grid.Row="2"
+            Grid.Column="1" />
+        <Image
+            x:Name="yourCard2"
+            Grid.Row="2"
+            Grid.Column="2" />
+        <Image
+            x:Name="yourCard3"
+            Grid.Row="2"
+            Grid.Column="3" />
+
+    </Grid>
+
+    <ContentPage.Content />
+</ContentPage>
